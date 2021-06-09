@@ -229,5 +229,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    'domain' => env('DOMAIN'),
 
 ];

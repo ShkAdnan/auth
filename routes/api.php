@@ -14,7 +14,8 @@ use App\Http\Controllers\TestController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::post('send_invitation', [TestController::class , 'sendEmail']);
 Route::post('register', [TestController::class , 'registerUser']);
 Route::post('login', [TestController::class , 'loginUser']);
 Route::post('verify', [TestController::class , 'verifyUser']);
+Route::post('update', [TestController::class , 'updateUser'])->middleware('auth');
